@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	  <% var mainMenu = ["Home", "About", "Contact Us","Sign Up"]; %>
+    <div class="container">
+    	<div class="header">
+		<ul>
+			<% for(var i = 0; i<mainMenu.length; i++) { %>
+	  			<li id="navbar">
+					<a href='<%= mainMenu[i] %>'>
+						<%= mainMenu[i] %>
+					</a>
+				</li>
+				<% } %>
+		</ul>
+	</div>
+	<div class="body">
+		<div>
+			<h1>Making Roleplaying Easier</h1> 
+			<p>A better solution to all those messy character sheets and note paper.</p>
+		</div>
+		<div>
+			<h2>Expanding Our Systems</h2>
+			<p>It started as a way to keep track of my own Dungeon World Games, but thats not where it'll end. We plan on expanding to different roleplay systems.<p>
+		</div>
+			
+    </div>
+  </body>
+</html>

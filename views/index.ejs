@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	  <% var mainMenu = ["Home", "About", "Contact Us","Sign Up"]; %>
+    <div class="container">
+    	<div class="header">
+		<ul>
+			<% for(var i = 0; i<mainMenu.length; i++) { %>
+	  			<li id="navbar">
+					<a href='<%= mainMenu[i] %>'>
+						<%= mainMenu[i] %>
+					</a>
+				</li>
+				<% } %>
+		</ul>
+	</div>
+	<div class="body">
+		<div>
+			<h1>Easily Keep Track of Your Roleplay Info</h1>
+			<p>A better solution to all those messy character sheets and note paper.</p>
+		</div>
+		<div>
+			<h2>Character Sheets and Creation</h2>
+			<p>Utilize our character creation wizard to make new characters for your roleplaying game quickly and easily. We'll provide you with step by step guidance to fill out your character sheet.<p>
+			<p>Save your characters and go back to them when you need to. You can have multiple saved at once.</p>
+		</div>
+			
+    </div>
+  </body>
+</html>
